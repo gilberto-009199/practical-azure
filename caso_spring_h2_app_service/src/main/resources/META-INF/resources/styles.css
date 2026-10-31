@@ -1,0 +1,118 @@
+html, body {
+    background: linear-gradient(135deg, #eef2ff 0%, #f5f3ff 50%, #ecfeff 100%);
+    min-height: 100vh;
+}
+
+.app-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 28px;
+    border-radius: 16px;
+    color: #fff;
+    background: linear-gradient(120deg, #4f46e5 0%, #7c3aed 55%, #0ea5e9 100%);
+    box-shadow: 0 10px 25px -8px rgba(79, 70, 229, 0.55);
+}
+
+.app-header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.app-header h1 {
+    margin: 0;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.app-header .subtitle {
+    opacity: 0.85;
+    font-size: 0.9rem;
+}
+
+.app-header .badge {
+    margin-left: auto;
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.22);
+    white-space: nowrap;
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 24px -10px rgba(30, 41, 59, 0.25);
+    border-top: 5px solid var(--accent);
+}
+
+.card.cadastro { --accent: #7c3aed; }
+.card.listagem { --accent: #0ea5e9; }
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.card-header .icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    color: #fff;
+    background: var(--accent);
+}
+
+.card-header h3 {
+    margin: 0;
+    color: #1e293b;
+}
+
+.form-subtitle {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #6d28d9;
+    background: #ede9fe;
+}
+
+.cell-nome, .cell-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cell-icon vaadin-icon {
+    width: 16px;
+    height: 16px;
+    color: #0ea5e9;
+}
+
+.avatar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.acao-editar { color: #4f46e5; }
+.acao-excluir { color: #e11d48; }

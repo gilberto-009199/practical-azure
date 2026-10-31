@@ -1,0 +1,13 @@
+vaadin:
+  launch-browser: true
+spring:
+  application:
+    name: caso_spring_h2_app_service
+  datasource:
+    url: jdbc:h2:file:./contatosdb
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
